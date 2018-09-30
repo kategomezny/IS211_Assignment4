@@ -37,8 +37,7 @@ def shell_sort(a_list):
     sublist_count = len(a_list) // 2
     while sublist_count > 0:
         for start_position in range(sublist_count):
-            gap_insertion_sort(a_list, start_position, sublist_count)
-#        
+            gap_insertion_sort(a_list, start_position, sublist_count)       
         
         sublist_count = sublist_count // 2
     end = timeit.timeit()
